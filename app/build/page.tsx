@@ -152,7 +152,7 @@ export default function BuildPage() {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="e.g. A todo app with drag-and-drop reordering, local storage persistence, and a dark mode toggle..."
               rows={5}
-              className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-violet-300 transition-all resize-none"
+              className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-violet-300 transition-all resize-none"
             />
             <p className="text-xs text-gray-400 mt-1">{description.length} characters</p>
           </div>
