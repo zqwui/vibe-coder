@@ -14,10 +14,10 @@ const LANGUAGES = [
 ];
 
 const EXAMPLES = [
-  "app buat nyimpen link artikel yang mau aku baca nanti, bisa kasih tag dan search",
-  "game tebak kata kayak wordle tapi temanya anime",
-  "tool buat bikin jadwal belajar otomatis dari daftar topik yang aku input",
-  "chatbot yang bisa jawab pertanyaan soal menu restoran dari PDF",
+  "app to save articles I want to read later, with tags and search",
+  "word guessing game like Wordle but with an anime theme",
+  "tool that auto-generates a study schedule from a list of topics I input",
+  "chatbot that answers questions about a restaurant menu from a PDF",
 ];
 
 interface Result {
@@ -157,7 +157,7 @@ export default function Home() {
             Describe it. Build it.
           </h1>
           <p className="text-white/40 text-lg max-w-xl mx-auto">
-            Ceritain apa yang mau kamu buat pakai bahasa sehari-hari — VibeCoder translate jadi spec, kode, dan penjelasan yang bisa kamu pahami.
+            Describe what you want to build in plain language — VibeCoder turns it into a spec, starter code, and an explanation you&apos;ll actually understand.
           </p>
         </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                placeholder="Ceritain project kamu... misal: 'aku mau bikin app buat nyimpen resep masakan, bisa search dan kasih rating'"
+                placeholder="Describe your project... e.g. 'I want to build a recipe saving app where I can search and rate dishes'"
                 rows={5}
                 className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-4 py-3 text-sm placeholder:text-white/20 focus:outline-none focus:border-violet-500/40 resize-none transition-colors leading-relaxed"
               />
@@ -180,7 +180,7 @@ export default function Home() {
 
             {/* Examples */}
             <div>
-              <p className="text-white/30 text-xs mb-2">Contoh:</p>
+              <p className="text-white/30 text-xs mb-2">Examples:</p>
               <div className="flex flex-wrap gap-2">
                 {EXAMPLES.map((ex) => (
                   <button
