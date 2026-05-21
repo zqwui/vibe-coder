@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,17 +16,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VibeCoder — Describe it. Build it.",
   description:
-    "Ceritain apa yang mau kamu buat pakai bahasa sehari-hari — VibeCoder translate jadi spec, kode, dan penjelasan yang bisa kamu pahami. Powered by MiMo-V2.5-Pro.",
+    "VibeCoder translates plain language into production-ready starter code, powered by MiMo-V2.5-Pro. Describe what you want to build and get working code instantly.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#fafafa] text-gray-900`}>
+        <Navbar />
         {children}
       </body>
     </html>
